@@ -5,8 +5,8 @@
   }
   
   .card {
-    overflow: hidden;
     border-radius: 4px;
+    overflow: hidden;
     position: relative;
 
     &::before {
@@ -24,7 +24,12 @@
     figcaption {
       position: absolute;
       bottom: 0;
+
       padding: 24px;
+
+      &:has(.text-l) {
+        padding: 12px;
+      }
 
       h2 {
         margin-top: 8px;
